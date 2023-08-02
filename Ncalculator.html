@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator app</title>
+    <script defer src="Ncalculator.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        /* Add your custom CSS styles here */
+        /* .calculator {
+          max-width: 300px;
+          margin: 0 auto;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          background-color: #f2f2f2;
+         }
+         
+        .calculator button {
+          width: 50px;
+          height: 50px;
+          font-size: 18px;
+          margin: 5px;
+          cursor: pointer;
+        }
+        .calculator #display {
+          width: 100%;
+          height: 50px;
+          font-size: 24px;
+          text-align: right;
+          margin: 10px 0;
+          padding: 5px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        } */
+      </style>
+    </head>
+    <body>
+        <div class="calculator">
+        <section class="header">
+            <h1>Calculator</h1>
+            <input type="text" id="display">
+        </section>
+        <div class="row">
+            <button onclick="getNumber(1)">1</button>
+            <button onclick="getNumber(2)">2</button>
+            <button onclick="getNumber(3)">3</button>
+            <button class="operator add" onclick="getOperator('+')">+</button>
+        </div>
+        <div class="row">
+            <button onclick="getNumber(4)">4</button>
+            <button onclick="getNumber(5)">5</button>
+            <button onclick="getNumber(6)">6</button>
+            <button class="operator subtract" onclick="getOperator('-')">-</button>
+        </div>
+        <div class="row">
+            <button onclick="getNumber(7)">7</button>
+            <button onclick="getNumber(8)">8</button>
+            <button onclick="getNumber(9)">9</button>
+            <button class="operator multiply" onclick="getOperator('*')">*</button>
+        </div>
+        <div class="row">
+            <button onclick="getNumber(0)">0</button>
+            <button class="operator divide" onclick="getOperator('/')">/</button>
+            <button onclick="operate()">=</button>
+            <button id="clear" onclick="clearDisplay()">Clear</button>
+        </div>
+    </body>
+</body>
+</html>
